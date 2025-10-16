@@ -13,7 +13,7 @@ void appendItem(GenericList *list, void *data)
     // TODO - имплементировать
 }
 
-unsigned int findItem(GenericList *list, void *value, EqualsFunc cmp)
+int findItem(GenericList *list, void *value, EqualsFunc cmp)
 {
     // TODO - имплементировать
 }
