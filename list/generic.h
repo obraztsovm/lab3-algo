@@ -82,7 +82,7 @@ void appendItem(GenericList *list, void *data);
 
 Возвращает:
 - Индекс найденного элемента (начиная с 0),
-- или (unsigned int)-1, если элемент не найден или список пуст.
+- или -1, если элемент не найден или список пуст.
 
 Пример функции сравнения:
     int intEquals(const void *a, const void *b) {
@@ -90,7 +90,7 @@ void appendItem(GenericList *list, void *data);
     }
 ===============================================================================
 */
-unsigned int findItem(GenericList *list, void *value, EqualsFunc cmp);
+int findItem(GenericList *list, void *value, EqualsFunc cmp);
 
 /*
 ===============================================================================
