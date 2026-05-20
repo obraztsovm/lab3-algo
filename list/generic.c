@@ -113,7 +113,6 @@ void *popItem(GenericList *list, size_t index)
     returnData = malloc(list->elem_size);
     if (!returnData) {
         printf("Memory allocation failed for return data\n");
-
         return NULL;
     }
     memcpy(returnData, toDelete->data, list->elem_size);
